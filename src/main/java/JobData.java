@@ -39,6 +39,9 @@ public class JobData {
             }
         }
 
+        // Sort our values alphabetically
+        Collections.sort(values);
+
         return values;
     }
 
