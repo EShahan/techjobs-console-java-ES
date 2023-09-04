@@ -131,11 +131,11 @@ public class TechJobs {
                 System.out.println("*****");
 
                 // For Each someJob HashMap Entry
-                for (Map.Entry<String, String> Job : someJob.entrySet()) {
-                    System.out.println(Job.getKey() + ": " + Job.getValue());
+                for (Map.Entry<String, String> job : someJob.entrySet()) {
+                    System.out.println(job.getKey() + ": " + job.getValue());
                 }
 
-                System.out.println("*****" + "\n"); // TODO: This appends a new line at the end of every entry, *including the last one*. Possibly not allowed.
+                System.out.println("*****" + "\n"); //
             }
         }
 //        System.out.println("printJobs is not implemented yet");
