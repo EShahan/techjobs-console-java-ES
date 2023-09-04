@@ -71,8 +71,8 @@ public class JobData {
         for (HashMap<String, String> row : allJobs) {
 
             String aValue = row.get(column);
-
-            if (aValue.contains(value)) {
+            // using toUpperCase() on aValue and value prevents case sensitivity without altering returned values.
+            if (aValue.toUpperCase().contains(value.toUpperCase())) {
                 jobs.add(row);
             }
         }
@@ -102,8 +102,8 @@ public class JobData {
                 String aValue = column.getValue();
 
                 // If Value matches search term, add it to our array to be returned.
-
-                if (aValue.contains(value)) {
+                // using toUpperCase() on aValue and value prevents case sensitivity without altering returned values.
+                if (aValue.toUpperCase().contains(value.toUpperCase())) {
                     jobs.add(row);
                     break; // breaks loop to 'jump' to the next row once it finds a matching term.
                     // Prevents duplicate additions if a search term would appear in multiple columns.
