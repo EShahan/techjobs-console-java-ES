@@ -119,7 +119,25 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
+        // If someJobs is empty, print No Results
+        if (someJobs.isEmpty()) {
+            System.out.println("No Results");
+        }
 
-        System.out.println("printJobs is not implemented yet");
+        // If someJobs is not empty, print in this format
+        else {
+            // For each someJobs Array List Value...
+            for (HashMap<String, String> someJob : someJobs) {
+                System.out.println("*****");
+
+                // For Each someJob HashMap Entry
+                for (Map.Entry<String, String> Job : someJob.entrySet()) {
+                    System.out.println(Job.getKey() + ": " + Job.getValue());
+                }
+
+                System.out.println("*****" + "\n"); // TODO: This appends a new line at the end of every entry, *including the last one*. Possibly not allowed.
+            }
+        }
+//        System.out.println("printJobs is not implemented yet");
     }
 }
