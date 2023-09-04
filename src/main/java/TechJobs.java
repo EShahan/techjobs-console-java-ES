@@ -128,6 +128,7 @@ public class TechJobs {
         else {
             // For each someJobs Array List Value...
             for (HashMap<String, String> someJob : someJobs) {
+                System.out.print('\n');
                 System.out.println("*****");
 
                 // For Each someJob HashMap Entry
@@ -135,7 +136,7 @@ public class TechJobs {
                     System.out.println(job.getKey() + ": " + job.getValue());
                 }
 
-                System.out.println("*****" + "\n"); //
+                System.out.println("*****"); //
             }
         }
 //        System.out.println("printJobs is not implemented yet");
